@@ -16,9 +16,10 @@
     "quotes": [1, "single"]
   },
   "globals": {
-    "jQuery": false,
-    "$": false,
-    "_": false
+    "jQuery": true,
+    "$": true,
+    "_": true
+    "api_vars":true
   },
   "env": {
     "es6": true,

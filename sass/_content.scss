@@ -31,3 +31,28 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+/* Archive page */
+
+main ul li{
+	float: left;
+	text-decoration: none;
+
+}
+main ul li a{
+	text-decoration: none;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.25rem;
+	color: #0c0;
+}
+.tag-archives{ 
+a{
+	text-decoration: none;
+    font-size: 3rem;
+    color: #0c0;
+}
+}
+.post-archives h2{
+	margin-left: 17px;
+}

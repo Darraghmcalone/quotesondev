@@ -18,3 +18,15 @@ iframe,
 object {
 	max-width: 100%;
 }
+
+@media (min-width: 620px){
+.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+    font-size: 1.75rem;
+}
+}
+
+@media (min-width: 1080px){
+.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+    font-size: 2.5rem;
+}
+}

@@ -1,17 +1,23 @@
 <?php
 /**
- * Template part for displaying posts.
+ * The template for displaying all single posts.
  *
  * @package QOD_Starter_Theme
  */
-?>
 
+get_header(); ?>
 
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php $source = get_post_meta( get_the_ID(), '_qod_quote_source', true );
+		<?php while ( have_posts() ) : the_post(); ?>
+
+			<?php $source = get_post_meta( get_the_ID(), '_qod_quote_source', true );
 $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 ?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
     <div class="entry-content">
         <?php the_content(); ?>
     </div><!-- .entry-content -->
@@ -31,5 +37,12 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 </article><!-- #post-## -->
 
 <?php if ( is_home() || is_single() ) : ?>
-    <div class="button"><button type="button" id="new-quote-button">Show Me Another!</button></div>
+    <button type="button" id="new-quote-button">Show Me Another!</button>
 <?php endif; ?>
+
+		<?php endwhile; // End of the loop. ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>

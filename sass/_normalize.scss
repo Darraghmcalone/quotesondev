@@ -140,6 +140,15 @@ button,
 select {
 	text-transform: none;
 }
+button#new-quote-button{
+	background-color: transparent;
+    border: 2px solid #0c0;
+    color: #0c0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: .75rem 2.25rem;
+}
+
 
 button,
 html input[type="button"],
@@ -147,6 +156,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: button;
 	cursor: pointer;
+
 }
 
 button[disabled],

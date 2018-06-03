@@ -8,7 +8,7 @@ a {
 	color: $color__link;
 
 	&:visited {
-		color: $color__link-visited;
+		color: #0c0;
 	}
 	&:hover,
 	&:focus,
@@ -25,18 +25,28 @@ a {
 }
 
 /* Menus */
-
+.main-navigation a{
+	margin-left: 3px;
+}
 .main-navigation {
 	clear: both;
-	display: block;
+	display: flex;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 	float: left;
 	width: 100%;
+	align-items: baseline;
+
+
+
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		    flex-flow: row wrap;
+    display: flex;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -98,15 +108,12 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: flex;
 }
 
 @media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation ul {
-		display: block;
 	}
 }
 
@@ -129,4 +136,16 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+#primary-menu li{
+	border-right: 1px solid white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+
+#site-navigation p{
+	display: flex;
+	margin-left: 1rem;
 }

@@ -14,7 +14,13 @@ html {
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	color: $color__text-main;
+	background-color: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%;
+
 }
 
 blockquote, q {
@@ -38,11 +44,11 @@ ul, ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
 }
 
 ol {
-	list-style: decimal;
+	list-style: none;
 }
 
 li > ul,
@@ -67,4 +73,16 @@ img {
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
+}
+
+/* Header Logo */
+
+div.qod-logo{
+	 display: flex;
+    justify-content: center;
+}
+
+
+img.logo{
+	width: 700px;
 }
