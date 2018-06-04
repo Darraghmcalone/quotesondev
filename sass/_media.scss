@@ -28,7 +28,29 @@ object {
 @media (min-width: 1080px){
 .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
     font-size: 2.5rem;
+
+
 }
+.site-content::after { 
+    content: "\f10e";
+    font-family: 'fontawesome';
+    color: #0c0;
+    font-size: 125px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-content::before{
+	content: "\f10d";
+    font-family: 'fontawesome';
+    color: #0c0;
+    font-size: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 }
 
 @media (max-width: 690px){

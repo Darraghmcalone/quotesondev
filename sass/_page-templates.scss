@@ -22,28 +22,8 @@ margin-left: 20px;
 .entry-meta{
 	padding-left: 20px;
 }
-.site-content::after { 
-    content: "\f10e";
-    font-family: 'fontawesome';
-    color: #0c0;
-    font-size: 125px;
-    display: flex;
-    justify-content: flex-start;
-}
 
-.site-content::before{
-	content: "\f10d";
-    font-family: 'fontawesome';
-    color: #0c0;
-    font-size: 125px;
-    display: flex;
-    justify-content: center;
-}
 
-div.button{
-	display: flex;
-    justify-content: center;
-}
 a.tag-cloud-link{
 	font-size: 30px;
 }
