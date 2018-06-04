@@ -4,7 +4,11 @@
 
 html {
 	box-sizing: border-box;
-	font-size: 1rem;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: Exo Web, sans serif;
+	background-color: $color__background-body;
+	line-height: $base__space-unit;
 }
 
 *,

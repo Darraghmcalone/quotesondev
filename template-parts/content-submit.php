@@ -8,7 +8,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    
+
+<?php if ( is_user_logged_in() ) {; ?>   
 
 <form name="quoteForm" id="quote-submission-form"><!--. submission-form -->
         <div>
@@ -30,7 +31,14 @@
 
         <input type="submit" value="Submit Quote">
     </form>
-
+<?php } else { ?>
+	<h1>Submit a Quote</h1>
+    <p>Sorry, you must be logged in to submit a quote!</p>
+	<a href="../wp-login.php">Click here to login.</a> 
+<?php } ?>
+         
     <div class='submit-success-message'>
     	
     </div>
+   
+
